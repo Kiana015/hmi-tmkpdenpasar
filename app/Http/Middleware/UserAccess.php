@@ -22,7 +22,7 @@ class UserAccess
         }
         else
         {
-            return response()->json(['You do not have permission to access for this page.']);
+            return response()->json(['You do not have permission to access for this page. Your User Type Is '.Auth::user()->type.". Required ".$userType]);
         }
     }
 }
