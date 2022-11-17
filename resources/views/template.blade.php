@@ -21,10 +21,11 @@
   <link rel="apple-touch-icon" sizes="76x76" href="{{url('Assets/Dashboard/img/apple-icon.png')}}">
   <link rel="icon" type="image/png" href="{{url('Assets/Dashboard/img/favicon.png')}}">
   <title>
-    Material Dashboard 2 by Creative Tim
+    Dashboard TMKP
   </title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Nucleo Icons -->
   <link href="{{url('Assets/Dashboard/css/nucleo-icons.css')}}" rel="stylesheet" />
   <link href="{{url('Assets/Dashboard/css/nucleo-svg.css')}}" rel="stylesheet" />
@@ -32,6 +33,7 @@
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{url('Assets/Dashboard/css/DataTables/datatables.min.css')}}">
   <!-- CSS Files -->
   <link id="pagestyle" href="{{url('Assets/Dashboard/css/material-dashboard.css?v=3.0.4')}}" rel="stylesheet" />
 </head>
@@ -49,7 +51,7 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white active bg-gradient-success" href="../pages/dashboard.html">
+          <a class="nav-link text-white active bg-gradient-success" href="/home">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">dashboard</i>
             </div>
@@ -57,7 +59,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="../pages/tables.html">
+          <a class="nav-link text-white " href="/beritaTmkp">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">table_view</i>
             </div>
@@ -227,11 +229,13 @@
     </div>
   </main>
   <!--   Core JS Files   -->
+  <script src="{{url('Assets/Dashboard/js/jquery.min.js')}}"></script>
   <script src="{{url('Assets/Dashboard/js/core/popper.min.js')}}"></script>
   <script src="{{url('Assets/Dashboard/js/core/bootstrap.min.js')}}"></script>
   <script src="{{url('Assets/Dashboard/js/plugins/perfect-scrollbar.min.js')}}"></script>
   <script src="{{url('Assets/Dashboard/js/plugins/smooth-scrollbar.min.js')}}"></script>
   <script src="{{url('Assets/Dashboard/js/plugins/chartjs.min.js')}}"></script>
+  <script type="text/javascript" charset="utf8" src="{{url('Assets/Dashboard/css/DataTables/datatables.min.js')}}"></script>
   <script>
     var ctx = document.getElementById("chart-bars").getContext("2d");
 
@@ -492,6 +496,20 @@
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="{{url('Assets/Dashboard/js/material-dashboard.min.js?v=3.0.4')}}"></script>
+  <script src="{{url('Assets/Dashboard/js/ckeditor.js')}}"></script>
+  <script>
+    $(document).ready( function () {
+      $('#myTable').DataTable({
+        language: {
+          'paginate': {
+            'previous': '<span><i class="fa fa-solid fa-arrow-left"></i></span>',
+            'next': '<span><i class="fa fa-solid fa-arrow-right"></i></span>'
+          }
+        }
+      });
+      CKEDITOR.replace('editor');
+    });
+  </script>
 </body>
 
 </html>

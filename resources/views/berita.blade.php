@@ -145,90 +145,24 @@
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
         <div class="row content">
+          
+          <!-- Start Section Berita -->
+          @foreach($dataBerita as $data1)
           <div class="col-lg-3 col-md-12 col-sm-12" style="margin-bottom: 20px;">
-            <a href="/detailBerita/1">
+            <a href="/detailBerita/{{$data1->linked_hash}}">
               <div class="card" style="border-color: #009b4c;">
                 <div class="card-header" style="border-color: #009b4c;">
-                  <img class="card-img-top" src="assets/LandingPage/img/tmkp-logo.png" alt="Card image cap">
+                  <img class="card-img-top" src="Assets/pic/{{$data1->thumb_gambar}}" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title" style="color: #009b4c;">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text" style="color: #000">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title" style="color: #009b4c;">{{$data1->judul_berita}}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">{{$data1->penulis}}</h6>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-12 col-sm-12" style="margin-bottom: 20px;">
-            <a href="/detailBerita/1">
-              <div class="card" style="border-color: #009b4c;">
-                <div class="card-header" style="border-color: #009b4c;">
-                  <img class="card-img-top" src="assets/LandingPage/img/tmkp-logo.png" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title" style="color: #009b4c;">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text" style="color: #000">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-12 col-sm-12" style="margin-bottom: 20px;">
-            <a href="/detailBerita/1">
-              <div class="card" style="border-color: #009b4c;">
-                <div class="card-header" style="border-color: #009b4c;">
-                  <img class="card-img-top" src="assets/LandingPage/img/tmkp-logo.png" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title" style="color: #009b4c;">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text" style="color: #000">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-12 col-sm-12" style="margin-bottom: 20px;">
-            <a href="/detailBerita/1">
-              <div class="card" style="border-color: #009b4c;">
-                <div class="card-header" style="border-color: #009b4c;">
-                  <img class="card-img-top" src="assets/LandingPage/img/tmkp-logo.png" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title" style="color: #009b4c;">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text" style="color: #000">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-12 col-sm-12" style="margin-bottom: 20px;">
-            <a href="/detailBerita/1">
-              <div class="card" style="border-color: #009b4c;">
-                <div class="card-header" style="border-color: #009b4c;">
-                  <img class="card-img-top" src="assets/LandingPage/img/tmkp-logo.png" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title" style="color: #009b4c;">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text" style="color: #000">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-12 col-sm-12" style="margin-bottom: 20px;">
-            <a href="/detailBerita/1">
-              <div class="card" style="border-color: #009b4c;">
-                <div class="card-header" style="border-color: #009b4c;">
-                  <img class="card-img-top" src="assets/LandingPage/img/tmkp-logo.png" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title" style="color: #009b4c;">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text" style="color: #000">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </a>
-          </div>
+          @endforeach
+          <!-- End Section Of Berita -->
       </div>
       <div class="col-sm-12 col-lg-12 col-md-12">
         <p>Page ... From ...</p>

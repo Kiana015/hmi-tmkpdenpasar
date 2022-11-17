@@ -43,7 +43,7 @@
     <div class="container d-flex align-items-center">
 
       <!-- Uncomment below if you prefer to use an image logo -->
-       <a href="index.html" class="logo me-auto"><img src="assets/LandingPage/img/tmkp-logo-nav.png" alt="" class="img-fluid"></a>
+       <a href="index.html" class="logo me-auto"><img src="{{url('assets/LandingPage/img/tmkp-logo-nav.png')}}" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -131,7 +131,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-6" style="margin-bottom: 0px">
             <div class="section-title">
-              <h2 style="color: #009b4c">Judul Berita</h2>
+              <h2 style="color: #009b4c">{{$dataBerita->judul_berita}}</h2>
             </div>
           </div>
         </div>
@@ -139,24 +139,15 @@
       <div class="container" data-aos="fade-up">
         <div class="row content">
           <div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 20px; margin-top: 10px;">
-            <p align="center" style="margin-bottom: 5px; font-size: 10pt;">Ditulis Oleh <b>...</b></p>
-            <p align="center" style="font-size: 10pt;">Terbit Pada <b>...</b></p>
+            <p align="center" style="margin-bottom: 5px; font-size: 10pt;">Ditulis Oleh <b>{{$dataBerita->penulis}}</p></b>
+            <p align="center" style="font-size: 10pt;">Terbit Pada <b><?php echo date('d M Y H:i',strtotime($dataBerita->tgl_berita)) ?></b></p>
           </div>
           <div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 15px" align="center">
-            <img src="{{url('assets/LandingPage/img/tmkp-logo-copy.png')}}" align="center" class="img-fluid img-thumbnail" width="300" style="border-color: #009b4c">
+            <img src="{{url('Assets/pic/'.$dataBerita->thumb_gambar)}}" align="center" class="img-fluid img-thumbnail" width="300" style="border-color: #009b4c">
           </div>
           <div class="col-lg-12 col-md-12 col-sm-12" align="justify">
-            <p><b style="color: #009b4c;">Tempat, 2022</b> - 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae lectus nulla. Vestibulum vitae risus mattis, faucibus tellus quis, tincidunt diam. Etiam tristique quam at ullamcorper eleifend. In augue urna, tristique in tempus quis, vulputate eu nisl. Duis ac augue euismod, sollicitudin nisl sed, volutpat augue. Curabitur sit amet dapibus nulla. Curabitur tincidunt mollis erat, sed dapibus enim elementum sed. Donec lobortis tempor aliquam. <br><br>
-
-In hac habitasse platea dictumst. Maecenas ut turpis fermentum, ullamcorper ligula eu, congue massa. Nullam quis aliquet sem. Duis iaculis sagittis risus eu egestas. Pellentesque pretium ligula sed felis sagittis, non pretium lacus fringilla. Maecenas porta a ante sed imperdiet. Donec fringilla justo nibh, eget consequat lacus vulputate eget. Etiam scelerisque neque sit amet ornare dapibus. Nam consectetur, nisl sit amet convallis tincidunt, metus magna luctus arcu, ut viverra nibh nulla accumsan massa. Integer id ultricies augue, sed iaculis libero.<br><br>
-
-Nulla vehicula luctus nunc vel imperdiet. Sed tempus quam sed congue tincidunt. Nullam fringilla consectetur laoreet. In at purus vel nunc suscipit euismod. Vivamus hendrerit rutrum libero quis condimentum. Nullam a vulputate est. In dui massa, luctus vitae est sit amet, vulputate iaculis tortor. Sed ornare nisl vitae vulputate interdum. Duis sapien nibh, molestie nec sollicitudin vitae, elementum id neque.<br><br>
-
-Suspendisse vestibulum id ipsum in congue. Nulla facilisi. Vivamus in enim aliquam, sagittis metus id, varius purus. Aliquam iaculis, arcu vitae rhoncus efficitur, mi odio dignissim lectus, eu consequat ante velit eu quam. Aenean ultrices nisi ac elit vehicula tristique. Phasellus iaculis, ex et porttitor tristique, eros ipsum ultrices metus, sit amet bibendum dui elit eget neque. Nulla semper a diam bibendum tincidunt. Morbi aliquam vehicula nulla, at lobortis nisi cursus eu.<br><br>
-
-Maecenas imperdiet purus ut nisl dignissim, ac convallis augue consectetur. Nullam malesuada velit nec justo tincidunt, id convallis justo commodo. Phasellus in tortor erat. Etiam ornare egestas mattis. In quis libero at purus accumsan placerat. Ut sit amet faucibus est, non dignissim risus. Quisque rhoncus ac dui ac posuere. Integer egestas malesuada est, blandit varius mi tincidunt lobortis. </p>
+            <p><b style="color: #009b4c;">{{$dataBerita->tempat}}, <?php echo date('Y', strtotime($dataBerita->tgl_berita)); ?></b></p>
+            <?php echo $dataBerita->isi; ?>
           </div>
       </div>
     </section><!-- End About Us Section -->

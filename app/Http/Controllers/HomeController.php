@@ -26,5 +26,5 @@ class HomeController extends Controller
     {
         $dataUser = User::find(Auth::user()->id);
         return view('home',compact(['dataUser']));
-    } 
+    }
 }
