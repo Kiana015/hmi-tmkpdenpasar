@@ -31,6 +31,9 @@ class landingPage extends Controller
             ->where('tayang','=','1')
             ->orderBy('tgl_berita','desc')
             ->paginate(8);
-        return view('berita');
-    }    
+        return view('berita',compact(['dataBerita']));
+    }
+    public function latihanKader(){
+        return view('latihanKader');
+    }
 }

@@ -14,7 +14,7 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Scripts -->
-    <link rel="stylesheet" type="text/css" href="resources/sass/app.scss">
+    <link rel="stylesheet" type="text/css" href="/resources/sass/app.scss">
 </head>
 <body>
     <div id="app">

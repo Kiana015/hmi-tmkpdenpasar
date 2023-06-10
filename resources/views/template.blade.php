@@ -18,8 +18,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="{{url('Assets/Dashboard/img/apple-icon.png')}}">
-  <link rel="icon" type="image/png" href="{{url('Assets/Dashboard/img/favicon.png')}}">
+  <link href="{{url('assets/LandingPage/img/tmkp-logo-copy.png')}}" rel="icon">
+  <link href="{{url('assets/LandingPage/img/tmkp-logo-copy.png')}}" rel="apple-touch-icon">
   <title>
     Dashboard TMKP
   </title>
@@ -51,7 +51,7 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white active bg-gradient-success" href="/home">
+          <a class="nav-link text-white <?php if(Route::current()->getName() == "home") { ?> active bg-gradient-success <?php } ?>" href="/home">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">dashboard</i>
             </div>
@@ -59,7 +59,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="/beritaTmkp">
+          <a class="nav-link text-white <?php if(Route::current()->getName() == "beritaTmkp" || Route::current()->getName() == "tambahBerita" || Route::current()->getName() == "editBerita") { ?> active bg-gradient-success <?php } ?>" href="/beritaTmkp">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">table_view</i>
             </div>

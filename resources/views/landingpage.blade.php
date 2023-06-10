@@ -56,7 +56,12 @@
           </li>
           <li><a class="nav-link" href="/berita">Berita TMKP</a></li>
           <li><a class="nav-link" href="/panduanHmi">Panduan HMI</a></li>
-          <li><a class="getstarted" href="#about">Login</a></li>
+          <li><a class="nav-link scrollto" href="/latihanKader">Latihan Kader (LK1)</a></li>
+          @if(empty(auth()->user()))
+          <li><a class="getstarted" href="/login">Login</a></li>
+          @else
+          <li><a class="getstarted" href="/home">Dashboard</a></li>
+          @endif
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

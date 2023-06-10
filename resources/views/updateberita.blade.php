@@ -12,18 +12,18 @@
 			<div class="card-body">
 				<form action="/editBerita/{{$id}}" method="POST" enctype="multipart/form-data">
 					@csrf
+					<label class="form-label">Header Berita</label>
 					<div class="input-group input-group-outline">
-						<label class="form-label">Header Berita</label>
 						<input type="text" name="header_berita" class="form-control" value="{{$databerita->judul_berita}}">
 					</div>
 					<br>
+					<label class="form-label">Penulis Berita</label>
 					<div class="input-group input-group-outline">
-						<label class="form-label">Penulis Berita</label>
 						<input type="text" name="penulis_berita" class="form-control" value="{{$databerita->penulis}}">
 					</div>
 					<br>
+					<label class="form-label">Tempat Berita</label>
 					<div class="input-group input-group-outline">
-						<label class="form-label">Tempat Berita</label>
 						<input type="text" name="tempat_berita" class="form-control" value="{{$databerita->tempat}}">
 					</div>
 					<br>

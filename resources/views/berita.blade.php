@@ -47,7 +47,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li class="dropdown"><a href="index.html"><span>Home</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="/"><span>Home</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a class="nav-link scrollto" href="/#about">Tentang TMKP</a></li>
               <li><a class="nav-link scrollto" href="/#services">Pengurus TMKP</a></li>
@@ -56,7 +56,12 @@
           </li>
           <li><a class="nav-link scrollto" href="/berita">Berita TMKP</a></li>
           <li><a class="nav-link   scrollto" href="/panduanHmi">Panduan HMI</a></li>
-          <li><a class="getstarted scrollto" href="#">Login</a></li>
+          <li><a class="nav-link scrollto" href="/latihanKader">Latihan Kader (LK1)</a></li>
+          @if(empty(auth()->user()))
+          <li><a class="getstarted" href="/login">Login</a></li>
+          @else
+          <li><a class="getstarted" href="/home">Dashboard</a></li>
+          @endif
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

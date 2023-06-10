@@ -43,7 +43,7 @@
     <div class="container d-flex align-items-center">
 
       <!-- Uncomment below if you prefer to use an image logo -->
-       <a href="index.html" class="logo me-auto"><img src="{{url('assets/LandingPage/img/tmkp-logo-nav.png')}}" alt="" class="img-fluid"></a>
+       <a href="index.html" class="logo me-auto"><img src="assets/LandingPage/img/tmkp-logo.png" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -70,9 +70,9 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <div style="margin-bottom: 80px;">
+  <section>
     
-  </div>
+  </section>
   <!-- <section id="hero" class="d-flex align-items-center" style="background: #009b4c;">
 
     <div class="container">
@@ -130,30 +130,30 @@
 
       </div>
     </section> --><!-- End Cliens Section -->
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
+    <footer id="footer">
+    <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-6" style="margin-bottom: 0px">
+          <div class="col-lg-6">
             <div class="section-title">
-              <h2 style="color: #009b4c">{{$dataBerita->judul_berita}}</h2>
+              <h2 style="color: #009b4c">Latihan Kader 1</h2>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    </footer>
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
       <div class="container" data-aos="fade-up">
         <div class="row content">
-          <div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 20px; margin-top: 10px;">
-            <p align="center" style="margin-bottom: 5px; font-size: 10pt;">Ditulis Oleh <b>{{$dataBerita->penulis}}</p></b>
-            <p align="center" style="font-size: 10pt;">Terbit Pada <b><?php echo date('d M Y H:i',strtotime($dataBerita->tgl_berita)) ?></b></p>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 15px" align="center">
-            <img src="{{url('Assets/pic/'.$dataBerita->thumb_gambar)}}" align="center" class="img-fluid img-thumbnail" width="300" style="border-color: #009b4c">
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12" align="justify">
-            <p><b style="color: #009b4c;">{{$dataBerita->tempat}}, <?php echo date('Y', strtotime($dataBerita->tgl_berita)); ?></b></p>
-            <?php echo $dataBerita->isi; ?>
-          </div>
+            <div class="col-sm-12" align="center">
+                Gambarnya minta yaa wkwkwkwkwkwk
+            </div>
+            <div class="col-sm-12 pt-5" align="justify">
+                Latihan Kader 1 
+            </div>
+        </div>
       </div>
     </section><!-- End About Us Section -->
   </main><!-- End #main -->
