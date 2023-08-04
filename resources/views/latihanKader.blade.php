@@ -146,10 +146,40 @@
       <div class="container" data-aos="fade-up">
         <div class="row content">
             <div class="col-sm-12" align="center">
-                Gambarnya minta yaa wkwkwkwkwkwk
+                Gambarnya
             </div>
             <div class="col-sm-12 pt-5" align="justify">
-                Latihan Kader 1 
+                <p>
+                  Latihan Kader 1 merupakan kegiatan Himpunan Mahasiswa Islam dalam rangka "Pengkaderan" Kader Baru. Kegiatan Latihan Kader 1
+                  dipusatkan pada kegiatan diskusi yang terdiri dari Sejarah Islam Di Nusantara, Analisis Sosial, Nilai Dasar Perjuangan,
+                  Sejarah Perjuangan HMI, Tujuan HMI (Mission), dan Teknik Persidangan. Selain diskusi, terdapat kegiatan-kegiatan lain seperti
+                  Coffee Break, Games, Refreshing, dan kegiatan lain yang seru untuk diikuti.
+                </p>
+                <p><b>Keuntungan Masuk HMI</b></p>
+                <div class="ml-10">
+                  <ul style="list-style-type:circle; margin-left: 20px">
+                    <li>Relasi</li>
+                    <li>Ilmu yang bermanfaat</li>
+                    <li>Mengasah Softskill & Hardskill</li>
+                    <li>Jodoh Jika Beruntung</li>
+                  </ul>
+                </div>
+                <p><b>Fasilitas</b></p>
+                <div class="ml-10">
+                  <ul style="list-style-type:circle; margin-left: 20px">
+                    <li>Diskusi/Forum</li>
+                    <li>Coffee Break</li>
+                    <li>Makan 3x Sehari</li>
+                    <li>Penginapan</li>
+                    <li>Sertifikat</li>
+                  </ul>
+                </div>
+                <p><b>Persyaratan</b></p>
+                <div class="ml-10">
+                  <ul style="list-style-type:circle; margin-left: 20px">
+                    <li>Beragama Islam</li>
+                  </ul>
+                </div>
             </div>
         </div>
       </div>
@@ -222,8 +252,13 @@
               {
                 ?>
                 <div class="row">
-                  <div class="col-sm-12 col-md-12 col-lg-12 mt-4 bg-success">
-                    <p class="text-center pt-4 pb-2 text-light">Terima Kasih Sudah Mendaftar! Kami Akan Memberitahukan Informasi Berikutnya</p>
+                  <div class="col-sm-12 col-md-12 pb-4 text-center col-lg-12 mt-4 bg-success">
+                    <p class="text-center pt-4 text-light">
+                      Terima Kasih Sudah Mendaftar! Untuk Mendapatkan Informasi Lebih Lanjut, Silahkan Join Grup Berikut! 
+                    </p>
+                    <a class="text-center text-light" href="#">
+                      <u>Link Whatsapp</u>
+                    </a>
                   </div>
                 </div>
                 <?php
