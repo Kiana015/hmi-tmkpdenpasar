@@ -164,42 +164,47 @@
             </div>
           </div>
           <div class="col-sm-12">
-            <form class="php-email-form">
+            <?php
+              if($setPage == 1)
+              {
+            ?>
+            <form action="/submitLatihanKader" method="POST">
+              @csrf
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-6 mt-4">
                   <div class="form-group">
                     <label for="name">Nama Kamu</label>
-                    <input type="text" name="nama" class="form-control" id="name" required>
+                    <input type="text" name="nama_peserta" class="form-control" id="name" required>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 mt-4">
                   <div class="form-group">
                     <label for="name">Nomor Telepon (Usahakan Sudah Terdaftar WhatsApp yaa!!)</label>
-                    <input type="text" name="no_telp" class="form-control" id="no_telp" required>
+                    <input type="text" name="telp_peserta" class="form-control" id="no_telp" required>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12 mt-4">
                   <div class="form-group">
                     <label for="name">Alamat Kamu</label>
-                    <textarea class='form-control' name="alamat"></textarea>
+                    <textarea class='form-control' name="alamat_peserta"></textarea>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 mt-4">
                   <div class="form-group">
                     <label for="name">Asal Universitas</label>
-                    <input type="text" name="universitas" class="form-control" id="universitas" required>
+                    <input type="text" name="asal_univ" class="form-control" id="universitas" required>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 mt-4">
                   <div class="form-group">
                     <label for="name">Fakultas</label>
-                    <input type="text" name="fakultas" class="form-control" id="fakultas" required>
+                    <input type="text" name="asal_fakultas" class="form-control" id="fakultas" required>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 mt-4">
                   <div class="form-group">
                     <label for="name">Program Studi</label>
-                    <input type="text" name="prodi" class="form-control" id="prodi" required>
+                    <input type="text" name="asal_prodi" class="form-control" id="prodi" required>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12 mt-4">
@@ -211,6 +216,19 @@
                 <div class="text-center mt-5"><button type="submit" class="btn btn-success">Daftar Sekarang Juga!</button></div>
               </div>
             </form>
+            <?php
+              }
+              else
+              {
+                ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12 mt-4 bg-success">
+                    <p class="text-center pt-4 pb-2 text-light">Terima Kasih Sudah Mendaftar! Kami Akan Memberitahukan Informasi Berikutnya</p>
+                  </div>
+                </div>
+                <?php
+              }
+            ?>
           </div>
         </div>
       </div>

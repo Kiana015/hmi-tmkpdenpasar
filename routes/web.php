@@ -22,6 +22,7 @@ Route::get('/berita', [App\Http\Controllers\landingpage::class, 'berita'])->name
 Route::get('/detailBerita/{id}', [App\Http\Controllers\landingpage::class, 'detailBerita'])->name('detaiilBerita');
 Route::get('/panduanHmi', [App\Http\Controllers\landingpage::class, 'panduanHmi'])->name('panduanHmi');
 Route::get('/latihanKader', [App\Http\Controllers\landingpage::class, 'latihanKader'])->name('latihanKader');
+Route::post('/submitLatihanKader', [App\Http\Controllers\landingpage::class, 'submitLatihanKader'])->name('submitLatihanKader');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
