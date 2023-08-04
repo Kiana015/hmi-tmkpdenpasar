@@ -130,7 +130,6 @@
 
       </div>
     </section> --><!-- End Cliens Section -->
-    <footer id="footer">
     <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
@@ -142,7 +141,6 @@
         </div>
       </div>
     </div>
-    </footer>
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
@@ -156,6 +154,68 @@
         </div>
       </div>
     </section><!-- End About Us Section -->
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="section-title">
+              <h4 style="color: #009b4c"><b>Segera Daftarkan Dirimu Dan Jadilah Bagian Dari HMI</b></h4>
+              <hr>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <form class="php-email-form">
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 mt-4">
+                  <div class="form-group">
+                    <label for="name">Nama Kamu</label>
+                    <input type="text" name="nama" class="form-control" id="name" required>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 mt-4">
+                  <div class="form-group">
+                    <label for="name">Nomor Telepon (Usahakan Sudah Terdaftar WhatsApp yaa!!)</label>
+                    <input type="text" name="no_telp" class="form-control" id="no_telp" required>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 mt-4">
+                  <div class="form-group">
+                    <label for="name">Alamat Kamu</label>
+                    <textarea class='form-control' name="alamat"></textarea>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 mt-4">
+                  <div class="form-group">
+                    <label for="name">Asal Universitas</label>
+                    <input type="text" name="universitas" class="form-control" id="universitas" required>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 mt-4">
+                  <div class="form-group">
+                    <label for="name">Fakultas</label>
+                    <input type="text" name="fakultas" class="form-control" id="fakultas" required>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 mt-4">
+                  <div class="form-group">
+                    <label for="name">Program Studi</label>
+                    <input type="text" name="prodi" class="form-control" id="prodi" required>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 mt-4">
+                  <div class="form-group">
+                    <label for="name">Apa Harapanmu Untuk LK1 Mu?</label>
+                    <textarea class='form-control' name="harapan"></textarea>
+                  </div>
+                </div>
+                <div class="text-center mt-5"><button type="submit" class="btn btn-success">Daftar Sekarang Juga!</button></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pb-5"></div>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
