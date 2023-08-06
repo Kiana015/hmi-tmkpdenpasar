@@ -144,6 +144,10 @@
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
+        <?php
+        if($setPage != 2)
+        {
+        ?>
         <div class="row content">
             <div class="col-sm-12" align="center">
                 Gambarnya
@@ -182,6 +186,23 @@
                 </div>
             </div>
         </div>
+        <?php
+        }
+        else{
+          ?>
+          <div class="row">
+              <div class="col-sm-12 col-md-12 pb-4 text-center col-lg-12 mt-4 bg-success">
+                <p class="text-center pt-4 text-light">
+                  Terima Kasih Sudah Mendaftar! Untuk Mendapatkan Informasi Lebih Lanjut, Silahkan Join Grup Berikut! 
+                </p>
+                <a class="text-center text-light" href="#">
+                  <u>Link Whatsapp</u>
+                </a>
+              </div>
+            </div>
+            <?php
+        }
+        ?>
       </div>
     </section><!-- End About Us Section -->
     <div class="footer-newsletter">
@@ -195,7 +216,22 @@
           </div>
           <div class="col-sm-12">
             <?php
-              if($setPage == 1)
+              if($setPage == 0)
+              {
+                ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 pb-4 text-center col-lg-12 mt-4 bg-danger">
+                    <p class="text-center pt-4 text-light">
+                      Pendaftaran Belum Dibuka. Nantikan Informasi Lebih Lanjut Di Sosial Media Kami! 
+                    </p>
+                    <!-- <a class="text-center text-light" href="#">
+                      <u>Link Whatsapp</u>
+                    </a> -->
+                  </div>
+                </div>
+                <?php
+              }
+              elseif($setPage == 1)
               {
             ?>
             <form action="/submitLatihanKader" method="POST">
@@ -248,22 +284,7 @@
             </form>
             <?php
               }
-              else
-              {
                 ?>
-                <div class="row">
-                  <div class="col-sm-12 col-md-12 pb-4 text-center col-lg-12 mt-4 bg-success">
-                    <p class="text-center pt-4 text-light">
-                      Terima Kasih Sudah Mendaftar! Untuk Mendapatkan Informasi Lebih Lanjut, Silahkan Join Grup Berikut! 
-                    </p>
-                    <a class="text-center text-light" href="#">
-                      <u>Link Whatsapp</u>
-                    </a>
-                  </div>
-                </div>
-                <?php
-              }
-            ?>
           </div>
         </div>
       </div>
