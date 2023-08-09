@@ -150,7 +150,7 @@
         ?>
         <div class="row content">
             <div class="col-sm-12" align="center">
-                Gambarnya
+            <img src="{{url('Assets/pic/lk1.jpg')}}" align="center" class="img-fluid img-thumbnail" width="700" style="border-color: #009b4c">
             </div>
             <div class="col-sm-12 pt-5" align="justify">
                 <p>
@@ -255,27 +255,49 @@
                     <textarea class='form-control' name="alamat_peserta"></textarea>
                   </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-4 mt-4">
+                <div class="col-sm-12 col-md-12 col-lg-6 mt-4">
                   <div class="form-group">
                     <label for="name">Asal Universitas</label>
                     <input type="text" name="asal_univ" class="form-control" id="universitas" required>
                   </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-4 mt-4">
+                <div class="col-sm-12 col-md-12 col-lg-6 mt-4">
                   <div class="form-group">
-                    <label for="name">Fakultas</label>
-                    <input type="text" name="asal_fakultas" class="form-control" id="fakultas" required>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4 mt-4">
-                  <div class="form-group">
-                    <label for="name">Program Studi</label>
+                    <label for="name">Angkatan</label>
                     <input type="text" name="asal_prodi" class="form-control" id="prodi" required>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12 mt-4">
                   <div class="form-group">
-                    <label for="name">Apa Harapanmu Untuk LK1 Mu?</label>
+                    <label for="name">Fakultas</label>
+                    <select class="form-control" name="asal_fakultas">
+                      <option value="">-- Pilih Fakultas --</option>
+                      <option value="Fakultas Ilmu Budaya">Fakultas Ilmu Budaya</option>
+                      <option value="Fakultas Kedokteran">Fakultas Kedokteran</option>
+                      <option value="Fakultas Hukum">Fakultas Hukum</option>
+                      <option value="Fakultas Teknik">Fakultas Teknik</option>
+                      <option value="Fakultas Pertanian">Fakultas Pertanian</option>
+                      <option value="Fakultas Ekonomi dan Bisnis">Fakultas Ekonomi dan Bisnis</option>
+                      <option value="Fakultas Peternakan">Fakultas Peternakan</option>
+                      <option value="Fakultas Matematika dan Ilmu Pengetahuan Alam">Fakultas Matematika dan Ilmu Pengetahuan Alam</option>
+                      <option value="Fakultas Kedokteran Hewan">Fakultas Kedokteran Hewan</option>
+                      <option value="Fakultas Teknologi Pertanian">Fakultas Teknologi Pertanian</option>
+                      <option value="Fakultas Pariwisata">Fakultas Pariwisata</option>
+                      <option value="Fakultas Ilmu Sosial dan Ilmu Politik">Fakultas Ilmu Sosial dan Ilmu Politik</option>
+                      <option value="Fakultas Kelautan dan Perikanan">Fakultas Kelautan dan Perikanan</option>
+                      <option value="">Lainnya</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 mt-4">
+                  <div class="form-group">
+                    <label for="name">Fakultas (Jika Tidak Ada Di Pilihan)</label>
+                    <input type="text" name="asal_fakultas_text" class="form-control" id="fakultas">
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 mt-4">
+                  <div class="form-group">
+                    <label for="name">Motivasi Mengikuti LK1</label>
                     <textarea class='form-control' name="harapan"></textarea>
                   </div>
                 </div>

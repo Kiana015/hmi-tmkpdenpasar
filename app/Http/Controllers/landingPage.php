@@ -45,7 +45,14 @@ class landingPage extends Controller
         $peserta->alamat_peserta = $request->alamat_peserta;
         $peserta->telp_peserta = $request->telp_peserta;
         $peserta->asal_univ = $request->asal_univ;
-        $peserta->asal_fakultas = $request->asal_fakultas;
+        if(is_null($request->asal_fakultas))
+        {
+            $peserta->asal_fakultas = $request->asal_fakultas_text;
+        }
+        else
+        {
+            $peserta->asal_fakultas = $request->asal_fakultas;
+        }
         $peserta->asal_prodi = $request->asal_prodi;
         $peserta->harapan = $request->harapan;
         $peserta->save();
