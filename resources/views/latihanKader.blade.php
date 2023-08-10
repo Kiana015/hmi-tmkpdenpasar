@@ -239,19 +239,19 @@
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-6 mt-4">
                   <div class="form-group">
-                    <label for="name">Nama Kamu</label>
+                    <label for="name">Nama</label>
                     <input type="text" name="nama_peserta" class="form-control" id="name" required>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 mt-4">
                   <div class="form-group">
-                    <label for="name">Nomor Telepon (Usahakan Sudah Terdaftar WhatsApp yaa!!)</label>
+                    <label for="name">Nomor HP (WhatsApp)</label>
                     <input type="text" name="telp_peserta" class="form-control" id="no_telp" required>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12 mt-4">
                   <div class="form-group">
-                    <label for="name">Alamat Kamu</label>
+                    <label for="name">Alamat</label>
                     <textarea class='form-control' name="alamat_peserta"></textarea>
                   </div>
                 </div>
