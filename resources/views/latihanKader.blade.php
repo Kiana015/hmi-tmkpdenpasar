@@ -149,16 +149,29 @@
         {
         ?>
         <div class="row content">
-            <div class="col-sm-12" align="center">
-            <img src="{{url('Assets/pic/lk1.jpg')}}" align="center" class="img-fluid img-thumbnail" width="700" style="border-color: #009b4c">
+          <div class="col-sm-12" align="center">
+            <img src="{{url('Assets/pic/lk1.jpeg')}}" align="center" class="img-fluid img-thumbnail border border-success" width="900" style="border-color: #009b4c">
+          </div>
+          <div class="col-sm-12 pt-5" align="justify">
+            <p>
+              Latihan Kader 1 merupakan kegiatan Himpunan Mahasiswa Islam dalam rangka "Pengkaderan" Kader Baru. Kegiatan Latihan Kader 1
+              dipusatkan pada kegiatan diskusi yang terdiri dari
+            </p>
+            <div class="ml-10">
+              <ul style="list-style-type:circle; margin-left: 20px">
+                <li>Sejarah Peradaban Islam dan HMI</li>
+                <li>Mission HMI</li>
+                <li>Kepemimpinan dan Manajemen Organisasi</li>
+                <li>Konstitusi HMI</li>
+                <li>Pengantar Filsafat dan NDP (Nilai Dasar Perjuangan)</li>
+                <li>Ke-Kohatian</li>
+                <li>Teknik Persidangan</li>
+              </ul>
             </div>
-            <div class="col-sm-12 pt-5" align="justify">
-                <p>
-                  Latihan Kader 1 merupakan kegiatan Himpunan Mahasiswa Islam dalam rangka "Pengkaderan" Kader Baru. Kegiatan Latihan Kader 1
-                  dipusatkan pada kegiatan diskusi yang terdiri dari Sejarah Islam Di Nusantara, Analisis Sosial, Nilai Dasar Perjuangan,
-                  Sejarah Perjuangan HMI, Tujuan HMI (Mission), dan Teknik Persidangan. Selain diskusi, terdapat kegiatan-kegiatan lain seperti
-                  Coffee Break, Games, Refreshing, dan kegiatan lain yang seru untuk diikuti.
-                </p>
+              <p>Selain diskusi, terdapat kegiatan-kegiatan lain seperti Coffee Break, Games, Refreshing, dan kegiatan lain yang seru untuk diikuti.</p>
+            </p>
+            <div class="row pt-4">
+              <div class="col-sm-12 col-md-12 col-lg-4">
                 <p><b>Keuntungan Masuk HMI</b></p>
                 <div class="ml-10">
                   <ul style="list-style-type:circle; margin-left: 20px">
@@ -168,23 +181,48 @@
                     <li>Jodoh Jika Beruntung</li>
                   </ul>
                 </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4">
                 <p><b>Fasilitas</b></p>
                 <div class="ml-10">
                   <ul style="list-style-type:circle; margin-left: 20px">
                     <li>Diskusi/Forum</li>
                     <li>Coffee Break</li>
-                    <li>Makan 3x Sehari</li>
+                    <li>Konsumsi Selama Kegiatan</li>
                     <li>Penginapan</li>
                     <li>Sertifikat</li>
                   </ul>
                 </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4">
                 <p><b>Persyaratan</b></p>
                 <div class="ml-10">
                   <ul style="list-style-type:circle; margin-left: 20px">
                     <li>Beragama Islam</li>
                   </ul>
                 </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12 pt-4 pb-4" align="center">
+                <p><b>Kegiatan LK 1 TMKP Akan Dilangsungkan Pada</b></p>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12 pt-4 pb-4" align="center">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="pl-5 pr-10" width="50" height="50" viewBox="0 0 24 24">
+                    <path fill="#009b4c" d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"/>
+                    <path fill="#009b4c" d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"/>
+                  </svg>
+                  <p>08 s/d 10 September 2023</p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12 pt-4 pb-4" align="center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                  <path fill="#009b4c" d="m12 17l1-2V9.858c1.721-.447 3-2 3-3.858c0-2.206-1.794-4-4-4S8 3.794 8 6c0 1.858 1.279 3.411 3 3.858V15l1 2zM10 6c0-1.103.897-2 2-2s2 .897 2 2s-.897 2-2 2s-2-.897-2-2z"/>
+                  <path fill="#009b4c" d="m16.267 10.563l-.533 1.928C18.325 13.207 20 14.584 20 16c0 1.892-3.285 4-8 4s-8-2.108-8-4c0-1.416 1.675-2.793 4.267-3.51l-.533-1.928C4.197 11.54 2 13.623 2 16c0 3.364 4.393 6 10 6s10-2.636 10-6c0-2.377-2.197-4.46-5.733-5.437z"/>
+                </svg>
+                <p>Villa Lake View, Bedugul, Tabanan, Bali</p>
+              </div>
             </div>
+          </div>
         </div>
         <?php
         }
@@ -195,8 +233,8 @@
                 <p class="text-center pt-4 text-light">
                   Terima Kasih Sudah Mendaftar! Untuk Mendapatkan Informasi Lebih Lanjut, Silahkan Join Grup Berikut! 
                 </p>
-                <a class="text-center text-light" href="#">
-                  <u>Link Whatsapp</u>
+                <a class="text-center text-light" href="https://chat.whatsapp.com/DihvYwTs3eC2jXrPDHlUaS">
+                  <u>https://chat.whatsapp.com/DihvYwTs3eC2jXrPDHlUaS</u>
                 </a>
               </div>
             </div>
